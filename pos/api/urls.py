@@ -5,7 +5,7 @@ from .views import (
     TableRestoListApiView, TableRestoDetailApiView
 )
 
-app_name = 'api',
+app_name = 'api'
 
 urlpatterns = [
     #path('api/v1/login', LoginView.as_view()),

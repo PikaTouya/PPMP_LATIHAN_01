@@ -20,7 +20,6 @@ from pos_app import views
 from api import views
 from django.conf import settings
 from django.conf.urls.static import static
-from django.views.static import serve #from gpt
 
 urlpatterns = [
     # pdf part 5
@@ -29,8 +28,6 @@ urlpatterns = [
     # path('admin/', admin.site.urls),
     path('', include('api.urls', namespace= 'api')),
 
-
-    path("media/<path:path>", serve, {"document_root": "path/to/media"}),#from gpt
 ]
 
 
